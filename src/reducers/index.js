@@ -1,11 +1,8 @@
 import { combineReducers } from 'redux';
-
-const placeholderReducer = (state = {}) => {
-  return state;
-};
+import leaderboardReducer  from './leaderboardReducer';
 
 const rootReducer = combineReducers({
-  placeholderReducer
+  leaderboard: leaderboardReducer
 });
 
 
