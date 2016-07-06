@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Table from '../components/Table';
+import LeaderboardTable from '../components/LeaderboardTable';
 import { LEADERBOARD_API_ENDPOINT } from '../constants/endpoints';
 
 export default class LeaderboardPage extends React.Component {
@@ -20,9 +20,8 @@ export default class LeaderboardPage extends React.Component {
   }
 
   render() {
-    console.log(this.state.users);
     return (
-      <Table data={this.state.users} />
+      <LeaderboardTable data={this.state.users} />
     );
   }
 }
